@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="378dp"
+            android:layout_marginTop="197dp"
+            android:text="Alive"
+            android:textColor="#E6E6E6"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="378dp"
+            android:layout_marginTop="245dp"
+            android:text="Stargazer"
+            android:textColor="#E6E6E6"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/coverArt"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="402dp"
+            android:layout_marginTop="29dp"
+            android:src="@mipmap/music" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="453dp"
+            android:layout_marginLeft="453dp"
+            android:layout_marginTop="322dp"
+            android:background="@drawable/ic_play_circle_filled_black_24dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="514dp"
+            android:layout_marginLeft="514dp"
+            android:layout_marginTop="323dp"
+            android:background="@drawable/ic_skip_next_black_24dp" />
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="391dp"
+            android:layout_marginLeft="391dp"
+            android:layout_marginTop="322dp"
+            android:background="@drawable/ic_skip_previous_black_24dp" />
+
+        <Button
+            android:id="@+id/miniShuffle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="359dp"
+            android:layout_marginLeft="359dp"
+            android:layout_marginTop="337dp"
+            android:background="@drawable/ic_shuffle_black_24dp" />
+
+        <Button
+            android:id="@+id/miniRepeat"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="575dp"
+            android:layout_marginTop="336dp"
+            android:background="@drawable/ic_repeat_black_24dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="377dp"
+            android:layout_marginTop="273dp" />
+
+        <TextView
+            android:id="@+id/eTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="377dp"
+            android:layout_marginTop="298dp"
+            android:text="0:00"
+            android:textColor="#ffffff"
+            android:textSize="4pt" />
+
+        <TextView
+            android:id="@+id/rTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="559dp"
+            android:layout_marginTop="298dp"
+            android:text="1:00"
+            android:textColor="#ffffff"
+            android:textSize="4pt" />
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp">
+
+
+        </LinearLayout>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/shuffle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Shuffle" />
+
+        <ListView
+            android:id="@+id/song_list"
+            android:layout_below="@id/shuffle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></ListView>
+
+    </RelativeLayout>
+    <!--<android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        >
+        &lt;!&ndash;app:menu="@menu/activity_main_drawer"&ndash;&gt;
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_header_height">
+
+            <Button
+                android:id="@+id/shuffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shuffle" />
+
+            <ListView
+                android:id="@+id/song_list"
+                android:layout_below="@id/shuffle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></ListView>
+
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>-->
+
+</android.support.v4.widget.DrawerLayout>
